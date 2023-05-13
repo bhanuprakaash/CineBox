@@ -8,8 +8,10 @@ const MovieDetails = () => {
   const handleBookTickets = () => {
     navigate(`/booking-form`, { state: { name } });
   };
-
-  const { name, image, runtime, summary, rating, language, genres } = state.movieData;
+  let name, image, runtime, summary, rating, language, genres;
+  if (state.movieData) {
+    ({ name, image, runtime, summary, rating, language, genres } = state.movieData);
+  };
 
   return (
     <div className="movie-details-container">
