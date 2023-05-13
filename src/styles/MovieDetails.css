@@ -1,0 +1,69 @@
+.movie-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  .movie-image img {
+    width: 250px;
+    height: auto;
+    max-width: 500px;
+  }
+  
+  .movie-information {
+    margin-top: 0rem;
+    text-align: start;
+  }
+  
+  .movie-information h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: rgb(102, 103, 171);
+  }
+  
+  .movie-information p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #5f9ea0;
+    color: #fff;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #4682b4;
+  }
+  .link{
+    text-decoration: none;
+    color:#fff;
+    font-size: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    .movie-details-container {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+  
+    .movie-image img {
+        width: 300px;
+      max-width: 400px;
+    }
+  
+    .movie-information {
+      margin-left: 2rem;
+      text-align: left;
+    }
+  }
+  
